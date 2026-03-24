@@ -2,6 +2,11 @@ class CargoContainer<T> where T : DeliveryItem
 {
     List<T> _items;
 
+    public CargoContainer()
+    {
+        _items = new List<T>();
+    }
+
     public void AddItem(T item)
     {
         _items.Add(item);
